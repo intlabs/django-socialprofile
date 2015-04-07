@@ -6,4 +6,5 @@ import subprocess
 
 
 def syncipa(backend, details, response, uid, user, *args, **kwargs):
-  subprocess.Popen(["/usr/bin/touch", "/root/bingo"])
+  username = self.kwargs.get('username')
+  subprocess.Popen(["/root/user_management.sh", username])
