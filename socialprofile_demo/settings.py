@@ -97,11 +97,15 @@ USE_TZ = True
 SECRET_KEY = 'zv$+w7juz@(g!^53o0ai1u082)=jkz9mT_r=3)fglrj5t8l$2#'
 
 # Email Settings
-EMAIL_HOST = 'a real smtp server'
-EMAIL_HOST_USER = 'your_mailbox_username'
-EMAIL_HOST_PASSWORD = 'your_mailbox_password'
-DEFAULT_FROM_EMAIL = 'a real email address'
-SERVER_EMAIL = 'a real email address'
+DEFAULT_FROM_EMAIL = os.environ['EMAIL_FROM']
+SERVER_EMAIL = os.environ['EMAIL_FROM']
+EMAIL_FROM = os.environ['EMAIL_FROM']
+EMAIL_USE_TLS = True
+EMAIL_HOST = os.environ['EMAIL_HOST']
+EMAIL_HOST_USER = os.environ['EMAIL_HOST_USER']
+EMAIL_HOST_PASSWORD = os.environ['EMAIL_HOST_PASSWORD']
+EMAIL_PORT = 587
+
 
 """ Django settings for the project. """
 
