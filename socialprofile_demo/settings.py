@@ -176,13 +176,10 @@ SOCIAL_AUTH_PIPELINE = (
     'social.pipeline.social_auth.load_extra_data',
     'social.pipeline.user.user_details',
     'socialprofile.pipeline.socialprofile_extra_values',
+    'socialprofile_demo.pipeline.syncipa',
     'social.pipeline.debug.debug'
 )
 SOCIAL_AUTH_REDIRECT_IS_HTTPS = True
-
-SOCIAL_AUTH_FORCE_EMAIL_VALIDATION = True
-SOCIAL_AUTH_EMAIL_VALIDATION_FUNCTION = 'socialprofile_demo.mail.send_validation'
-SOCIAL_AUTH_EMAIL_VALIDATION_URL = '/email-sent/'
 
 SOCIAL_AUTH_LOGIN_REDIRECT_URL = '/secure/'
 SOCIAL_AUTH_NEW_USER_REDIRECT_URL = '/secure/'
