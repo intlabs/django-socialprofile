@@ -140,7 +140,6 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.sites',
     'django.contrib.staticfiles',
-    'django_jenkins',
     'socialprofile',
     'socialprofile_demo',
     'social.apps.django_app.default',
