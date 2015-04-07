@@ -174,8 +174,10 @@ SOCIAL_AUTH_PIPELINE = (
     'socialprofile.pipeline.socialprofile_extra_values',
     'social.pipeline.debug.debug'
 )
-
 SOCIAL_AUTH_REDIRECT_IS_HTTPS = True
+
+SOCIAL_AUTH_FORCE_EMAIL_VALIDATION = True
+
 SOCIAL_AUTH_LOGIN_REDIRECT_URL = '/secure/'
 SOCIAL_AUTH_NEW_USER_REDIRECT_URL = '/secure/'
 SOCIAL_AUTH_NEW_ASSOCIATION_REDIRECT_URL = '/secure/'
